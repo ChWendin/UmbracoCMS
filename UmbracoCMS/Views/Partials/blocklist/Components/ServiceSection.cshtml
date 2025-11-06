@@ -1,0 +1,29 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.ServiceSection)Model.Content;
+    var settings = Model.Settings as ContentModels.ServiceSettings;
+
+    var sectionColor = settings?.ServiceBgColor ?? "#ffffff";
+}
+
+<section class="Service-Section" style="background-color:@(string.IsNullOrWhiteSpace(sectionColor) ? "#ffffff" : sectionColor)">
+    <div>
+        <div>
+            @if (settings!.ShowServiceLabel)
+            {
+                <h2 class="Label">@content.ServiceLabel</h2>
+            }
+        </div>
+
+    </div>
+
+    <div>
+        <div>
+            <h1 class="Service-Title">@content.ServiceTitle</h1>
+           
+
+        </div>
+
+    </div>
+</section>

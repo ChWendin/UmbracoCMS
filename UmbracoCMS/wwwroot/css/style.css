@@ -1,0 +1,122 @@
+﻿:root {
+    --font-standard: "Poppins", sans-serif;
+    --color-primary: #4F5955;
+    --color-secondary: #F2EDDC;
+    --color-sub3: #D9C3A9;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-standard);
+    font-size: 16px;
+    font-style: normal;
+    color: var(--color-primary);
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.Service-Section {
+    width: 100%;
+    margin: 0;
+
+}
+
+    .Service-Section p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .Hero-Section {
+        position: relative;
+        height: 500px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
+.HeroBgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.HeroContent {
+    height: 100%;
+    max-width:570px; 
+}
+
+.HeroContent span {
+    margin: 0;
+}
+
+.HeroContent p {
+    margin: 0;
+}
+
+.HeroContent h1 {
+      color: var(--color-primary);
+      font-size: 70px;
+      font-style: normal;
+      font-weight: 700;
+      margin-top:0;
+      margin-bottom: 2rem;
+      line-height: 5.5rem
+}
+
+.HeroText {
+    color: var(--color-primary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.HeroBtn {
+    display: inline-flex;
+    padding: 15px 40px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 3px;
+    background: var(--color-primary);
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: 700;
+    font-size:18px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    border-color: transparent;
+}
+
+.Label {
+    color: var(--color-sub3);
+    font-size: 14px;
+    padding-top: 3rem;
+    text-align:center;
+}
+
+.Service-Title {
+    font-size: 40px;
+}
+
+.Member-Name {
+    
+}
+

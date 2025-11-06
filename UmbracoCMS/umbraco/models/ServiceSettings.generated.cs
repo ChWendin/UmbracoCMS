@@ -54,14 +54,14 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("backgroundColor")]
-		public virtual string BackgroundColor => this.Value<string>(_publishedValueFallback, "backgroundColor");
+		[ImplementPropertyType("serviceBgColor")]
+		public virtual string ServiceBgColor => this.Value<string>(_publishedValueFallback, "serviceBgColor");
 
 		///<summary>
 		/// Show Label
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
-		[ImplementPropertyType("showLabel")]
-		public virtual bool ShowLabel => this.Value<bool>(_publishedValueFallback, "showLabel");
+		[ImplementPropertyType("showServiceLabel")]
+		public virtual bool ShowServiceLabel => this.Value<bool>(_publishedValueFallback, "showServiceLabel");
 	}
 }
