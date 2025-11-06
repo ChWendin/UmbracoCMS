@@ -3,6 +3,7 @@
     --color-primary: #4F5955;
     --color-secondary: #F2EDDC;
     --color-sub3: #D9C3A9;
+    --color-Note-1: #9C9EA6;
 }
 
 html, body {
@@ -20,23 +21,97 @@ html, body {
 .container {
     display: flex;
     flex-direction:column;
-    align-content: center;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
+}
+
+.topbarContainer {
+    background-color: var(--color-primary);
+}
+
+.contentGroup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentGroup p {
+    display:flex;
+    align-items: center;
+    color: #ffffff;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.SmGroup {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.SmGroup div {
+     padding: 1rem;
+     border-left: 1px solid var(--color-Note-1);
+}
+
+.last {
+    border-right: 1px solid var(--color-Note-1);
+}
+
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.NavHeader {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.NavBtns {
+    display: flex;
+    gap: 4rem;
+    list-style: none;
+}
+
+.NavBtns a {
+     text-decoration: none;
+     color: var(--color-primary);
+     font-weight: 700; 
+}
+
+    .NavBtns a:hover {
+        color: var(--color-secondary);
+    }
+
+.current a {
+    color: var(--color-secondary);
+}
+
+.SearchIcon {
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 .Service-Section {
     width: 100%;
     margin: 0;
-
 }
 
-    .Service-Section p {
+.Service-Section p {
         margin: 0;
         padding: 0;
-    }
+}
 
-    .Hero-Section {
+.Hero-Section {
         position: relative;
         height: 500px;
         width: 100%;
@@ -46,8 +121,8 @@ html, body {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 40px;
-    }
+        padding-top:2rem;
+}
 
 .HeroBgImage {
     position: absolute;
@@ -116,7 +191,57 @@ html, body {
     font-size: 40px;
 }
 
-.Member-Name {
-    
+
+.TeamContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.TeamContent h2 {
+    color: var(--color-sub3);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+
+.TeamContent p {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.TeamContentTitle {
+    color: var(--color-primary);
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.Member-Name {
+    margin: 0;
+}
+
+.MemberInfo {
+    padding: 1rem;
+    border: 1px solid #EAEAEA;
+}
+
+.MemberInfo p {
+    margin: 0;
+    color: var(--color-Note-1);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+
+.MemberGroup {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}

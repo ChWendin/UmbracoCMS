@@ -2,16 +2,31 @@
 @using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
 @{
     var content = (ContentModels.TeamSection)Model.Content;
+    var teamList = content.TeamMemberList;
 }
 
 <section>
-    <div>
-        <div>
+    <div class="center">
+        <div class="TeamContent">
             <h2>@content.TeamLabel</h2>
-            <div>@Html.Raw(content.TeamTitle)</div>
+            <div class="TeamContentTitle">@Html.Raw(content.TeamTitle)</div>
         </div>
 
-        @Html.GetBlockListHtml(content.TeamMemberList)
+        <div class="MemberGroup">
+            @if (teamList != null)
+            {
+                for(var i =0; i < teamList.Count; i++)
+                {
+                    var member = teamList[i];
+                    var colClass = i < 3 ? "w-1/3" : "w-1/4";
+
+                    <div class="@colClass">
+                        <partial name="Partials/BlockList/Components/TeamMember" model="member" />
+                    </div>
+                }
+            }
+        </div>
+
     </div>
 </section>
 
