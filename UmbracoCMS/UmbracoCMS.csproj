@@ -8,6 +8,9 @@
   <ItemGroup>
     <Content Remove="Views\Contact.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="app_plugins\onatrixrte\umbraco-package.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Umbraco.Cms" Version="16.3.1" />
@@ -20,6 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="App_Plugins\OnatrixRte\" />
     <Folder Include="wwwroot\images\" />
   </ItemGroup>
 
