@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.CallbackSection)Model.Content;
+}
+
+<section class="Callback-Section">
+    <div class="CallbackContainer">
+        <div class="CallbackContent">
+            <h4>@content.CallbackLabel</h4>
+            <h2>@content.CallbackTitle</h2>
+            <p>@content.CallbackQuote</p>
+            <span class="CallbackText">@Html.Raw(content.CallbackText)</span>
+			<img class="CallbackSignature" src="~/images/Signature.svg" />
+			<span class="CallbackName">Tina Fox - CEO & founder</span>
+        </div>
+        <div class="CallbackCard">
+            <h3>Request a call back</h3>
+
+            <form class="CallbackForm">
+                <span>Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email address" />
+                <input type="tel" placeholder="Phone" />
+                <select name="topic" required>
+                    <option value="consulting">Financial consulting</option>
+                    <option value="general">General inquiry</option>
+                    <option value="support">Customer support</option>
+                    <option value="sales">Sales</option>
+                    <option value="career">Career opportunities</option>
+                </select>
+				<button type="submit">Submit</button>
+            </form>
+        </div>
+	</div>
+</section>
