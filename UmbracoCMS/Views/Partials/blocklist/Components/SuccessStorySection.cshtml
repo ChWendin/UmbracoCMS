@@ -1,0 +1,63 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.SuccessStorySection)Model.Content;
+}
+
+<section class="SuccessSection">
+    <div class="SuccessContainer">
+        <div class="SuccessContent">
+            <div class="HeaderGroup">
+                <p>@content.SuccessStoryLabel</p>
+                <span>@content.SuccessStoryTitle</span>
+            </div>
+
+            <div class="SuccessStats">
+                <div class="StatGroups">
+                    <p>@content.SuccessStoryStat1</p>
+                    <span>@content.SuccessStoryStatText1</span>
+                </div>
+
+                <div class="StatGroups">
+                    <p>@content.SuccessStoryStat2</p>
+                    <span>@content.SuccessStoryStatText2</span>
+                </div>
+
+                <div class="StatGroups">
+                    <p>@content.SuccessStoryStat3</p>
+                    <span>@content.SuccessStoryStatText3</span>
+                </div>
+            </div>
+
+            <div class="SuccessImage">
+                @if (content.SuccessStoryImage != null)
+                {
+                    <img src="@content.SuccessStoryImage.Url()" />
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="LogoSection">
+    <div class="LogoGroups">
+        <img src="~/images/01.svg"/>
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/02.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/03.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/04.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/05.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/06.svg" />
+    </div>
+
+</section>
+    

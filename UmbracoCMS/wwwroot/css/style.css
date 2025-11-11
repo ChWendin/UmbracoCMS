@@ -28,8 +28,6 @@ html, body, a {
     text-decoration: none;
 }
 
-
-
 .container {
     display: flex;
     flex-direction:column;
@@ -103,9 +101,9 @@ html, body, a {
      font-weight: 700; 
 }
 
-    .NavBtns a:hover {
-        color: var(--color-secondary);
-    }
+.NavBtns a:hover {
+    color: var(--color-secondary);
+}
 
 .current a {
     color: var(--color-sub3);
@@ -185,6 +183,7 @@ html, body, a {
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding-bottom: 5rem;
 }
 
 .Service-Item {
@@ -320,12 +319,12 @@ html, body, a {
     color: var(--body-text-color);
 }
 
-    .CallbackSignature {
-        width: 161px;
-        height: 76px;
-        flex-shrink: 0;
-        margin-top: 1rem;
-    }
+.CallbackSignature {
+    width: 161px;
+    height: 76px;
+    flex-shrink: 0;
+    margin-top: 1rem;
+}
 
 .CallbackCard {
     max-width: 470px;
@@ -367,7 +366,6 @@ html, body, a {
     background: var(--color-white);
     font: 400 14px var(--font-standard);
     color: var(--body-text-color);
-    
 }
 
 .CallbackForm input::placeholder {
@@ -407,6 +405,128 @@ html, body, a {
     margin-top:0;
 }
 
+.OurStoryContainer {
+    background-image: url("/images/dot-map.svg");
+    background-size: contain;
+    background-position: center 43%;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.OurStoryContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.OurStoryContent p {
+    margin: 0;
+}
+
+.OurStoryContent h1 {
+    margin: 6rem 0 1.5rem 0;
+}
+
+.OurStoryContent a {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-weight: 700;
+    text-align: center;
+    border-radius: 3px;
+    max-width: 200px;
+    cursor: pointer;
+    padding: 1rem 2rem 1rem 2rem;
+    margin: 2rem 0 5.5rem 0;
+}
+
+.OurStoryImage img {
+    display: block;
+}
+
+.SuccessSection {
+    background-color: var(--color-primary);
+}
+
+.SuccessContainer {
+    background-image: url("/images/Dot-map2.svg");
+    background-size: contain;
+    background-position: center 43%;
+    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 6rem;
+    min-height: 840px;
+}
+
+.SuccessContent {
+    position: relative;
+}
+
+.HeaderGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.HeaderGroup p {
+    color: var(--color-sub3);
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.HeaderGroup span {
+    color: var(--color-white);
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.SuccessStats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.StatGroups {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 370px;
+}
+
+.StatGroups p {
+    color: var(--color-sub3);
+    font-size: 100px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.StatGroups span {
+    color: var(--color-white);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.SuccessImage {
+    position: absolute;
+    left: 115px;
+    top: calc(100% + 75px);
+}
+
+.LogoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    min-height: 400px;
+}
 
 .TeamContent {
     display: flex;
@@ -496,10 +616,10 @@ html, body, a {
     pointer-events: none;
 }
 
-    .HelpBgImage img {
-        display: block;
-        pointer-events: none;
-    }
+.HelpBgImage img {
+    display: block;
+    pointer-events: none;
+}
 
 .HelpCard {
     display:flex;
@@ -527,11 +647,10 @@ html, body, a {
     background: var(--color-white);
     color: var(--body-text-color);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 3px;
     font: 400 14px var(--font-standard);
     outline: none;
     box-shadow: 0 2px 6px rgba(0,0,0,.06);
-
 }
 
 .HelpForm input::placeholder {
@@ -558,10 +677,6 @@ html, body, a {
     width: 1px;
     background-color: var(--border-color);
     margin: 3rem 0 3rem 0;
-}
-
-.Contact-Section {
-
 }
 
 .Contact-Section--default {
@@ -651,23 +766,24 @@ html, body, a {
 
 .footerContainer {
     background-color: var(--footer-bg-color);
-    padding: 1rem 0 1rem 0;
+    padding: 1.3rem 0 1.3rem 0;
 }
 
 .footerText {
     font-size: 14px;
     width: 100%;
+    margin:0;
 }
 
 .footerText .footerHighlight {
     color: var(--color-sub3);
 }
 
-    .footerContent {
-        display: flex;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+.footerContent {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 
