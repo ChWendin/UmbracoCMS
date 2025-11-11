@@ -50,51 +50,35 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// Contact Bg Image
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("contactBgImage")]
-		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops ContactBgImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "contactBgImage");
-
-		///<summary>
-		/// Contact Email
+		/// Email
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("contactEmail")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContactEmail => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "contactEmail");
+		public virtual string ContactEmail => this.Value<string>(_publishedValueFallback, "contactEmail");
 
 		///<summary>
-		/// Contact Label
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
-		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("contactLabel")]
-		public virtual string ContactLabel => this.Value<string>(_publishedValueFallback, "contactLabel");
-
-		///<summary>
-		/// Contact Location
+		/// Location
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("contactLocation")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContactLocation => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "contactLocation");
+		public virtual string ContactLocation => this.Value<string>(_publishedValueFallback, "contactLocation");
 
 		///<summary>
-		/// Contact Phone
+		/// Phone
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("contactPhone")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContactPhone => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "contactPhone");
+		public virtual string ContactPhone => this.Value<string>(_publishedValueFallback, "contactPhone");
 
 		///<summary>
-		/// Contact Title
+		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("contactTitle")]
-		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContactTitle => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "contactTitle");
+		public virtual string ContactTitle => this.Value<string>(_publishedValueFallback, "contactTitle");
 	}
 }

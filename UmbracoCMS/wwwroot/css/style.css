@@ -15,6 +15,7 @@
     --bg-color-2: #C4C4C4;
     --border-color: #eaeaea;
     --body-text-color: #535656;
+    --footer-bg-color: #0E0E0E;
 }
 
 html, body, a {
@@ -78,7 +79,7 @@ html, body, a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.75rem;
+    padding: 0.75rem 0 0.75rem 0;
     max-width: 1200px;
     width: 100%;
 }
@@ -439,6 +440,18 @@ html, body, a {
     margin: 3rem 0 3rem 0;
 }
 
+.Contact-Section {
+
+}
+
+.Contact-Section--default {
+    background-color: var(--bg-color-1);
+}
+
+.Contact-Section--contact {
+    background-color: var(--color-white);
+}
+
 .ServiceDetailContent {
     display: flex;
     flex-direction: column;
@@ -446,9 +459,107 @@ html, body, a {
     margin: 3rem 0 3rem 0;
 }
 
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7rem;
+}
+
+.ContactContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.ContactContent h2 {
+    max-width: 400px;
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.ContactContent p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.ContactContent span {
+    color: var(--body-text-color);
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.ContactGroup {
+    display:flex;
+    flex-direction:column;
+    gap: 2rem;
+}
+
+.ContactGroupings {
+    display: flex;
+    gap: 0.5rem;
+    align-items:self-start;
+}
+
+.ContactGroupings div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}
+
+.MailIcon {
+    padding-top: 4px;
+}
+
+.ContactImageGroup {
+    position: relative;
+}
+
+.ContactImageGroup img {
+    display:block;
+}
+
+.ContactImageAbsolute {
+    position:absolute;
+    bottom: 0;
+}
+
+.footerContainer {
+    background-color: var(--footer-bg-color);
+    padding: 1rem 0 1rem 0;
+}
+
+.footerText {
+    font-size: 14px;
+    width: 100%;
+}
+
+.footerText .footerHighlight {
+    color: var(--color-sub3);
+}
+
+    .footerContent {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
+
+
+
 
 .rte img {
-    width:100%;
+    width: 100%;
     height: auto;
     object-fit: cover;
 }

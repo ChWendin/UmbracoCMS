@@ -1,0 +1,53 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.ContactSection)Model.Content;
+    var page = Umbraco.AssignedContentItem;
+    var isContactPage = page?.ContentType?.Alias == ContentModels.ContactPage.ModelTypeAlias;
+
+}
+
+<section class="Contact-Section @(isContactPage ? "Contact-Section--contact" : "Contact-Section--default")">
+    <div class="contact-container">
+        <div class="ContactImageGroup">
+            <img src="~/images/Component.svg" />
+            
+            <div class="ContactImageAbsolute">
+                <img src="~/images/ContactPerson.svg" />
+            </div>
+			
+        </div>
+        
+        
+        <div class="ContactContent">
+            <h2>@content.ContactTitle</h2>
+            <div class="ContactGroup">
+                <div class="ContactGroupings">
+                    <img src="~/images/Icon-address.svg" /> 
+                    <div>
+                        <p>Office location</p>
+                        <span>@content.ContactLocation</span>
+                    </div>
+
+                </div>
+
+                <div class="ContactGroupings">
+                    <img src="~/images/Icon-phone.svg" /> 
+                    <div>
+                        <p>Phone number</p>
+                        <span>@content.ContactPhone</span>
+                    </div>
+                </div>
+
+                <div class="ContactGroupings">
+                    <img class="MailIcon" src="~/images/Icon-email.svg" /> 
+                    <div>
+                        <p>E-mail address</p>
+                        <span>@content.ContactEmail</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+	</div>
+</section>
