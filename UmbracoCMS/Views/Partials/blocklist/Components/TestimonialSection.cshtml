@@ -1,0 +1,22 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.TestimonialSection)Model.Content;
+}
+
+<section class="testimonial-section">
+    <div class="TestimonialContainer">
+        <div class="TestimonialImage">
+            @if (content.TestimonialImage != null)
+            {
+            <img src="@content.TestimonialImage.Url()" alt="@content.TestimonialImage.Name" />     
+            }
+            <p>@content.TestimonialImageText</p>
+        </div>
+
+        <div class="TestimonialBody">
+			@Html.Raw(content.TestimonialBody)
+        </div>
+
+	</div>
+</section>

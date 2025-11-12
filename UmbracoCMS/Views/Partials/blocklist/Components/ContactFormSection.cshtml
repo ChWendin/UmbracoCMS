@@ -1,0 +1,57 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.ContactFormSection)Model.Content;
+}
+
+<section class="ContactForm-Section">
+    <div class="ContactFormContainer">
+        <div class="ContactFormContent">
+			<p>@Html.Raw(content.ContentFormLabel)</p>
+            <h2>@Html.Raw(content.ContactFormTitle)</h2>
+            <span class="ContactFormText">@Html.Raw(content.ContactFormText)</span>
+        </div>
+
+        <form class="CallbackForm">
+            <div class="FormFlex">
+                <input type="text" placeholder="Name" />
+                <input type="tel" placeholder="Phone" />
+            </div>
+            
+            <div class="FormFlex">
+                <input type="email" placeholder="Email address" />
+                <select name="topic" required>
+                    <option value="consulting">Financial consulting</option>
+                    <option value="general">General inquiry</option>
+                    <option value="support">Customer support</option>
+                    <option value="sales">Sales</option>
+                    <option value="career">Career opportunities</option>
+                </select>
+            </div>
+            
+            <button class="QuestionFormBtn" type="submit">Submit</button>
+        </form>
+	</div>
+</section>
+
+<section class="LogoSection">
+    <div class="LogoGroups">
+        <img src="~/images/01.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/02.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/03.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/04.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/05.svg" />
+    </div>
+    <div class="LogoGroups">
+        <img src="~/images/06.svg" />
+    </div>
+
+</section>

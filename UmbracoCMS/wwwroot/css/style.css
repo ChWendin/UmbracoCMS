@@ -16,6 +16,8 @@
     --border-color: #eaeaea;
     --body-text-color: #535656;
     --footer-bg-color: #0E0E0E;
+    --review-text-color: #999;
+    --review-name-color: #2D303A;
 }
 
 html, body, a {
@@ -528,6 +530,93 @@ html, body, a {
     min-height: 400px;
 }
 
+.TestimonialContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 3rem;
+    padding: 6rem 0 8rem 0;
+}
+
+.TestimonialImage p {
+    margin: 0;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: var(--color-primary);
+}
+
+.TestimonialBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 1.7rem;
+}
+
+.TestimonialBody p {
+    margin: 0;
+}
+
+.ReviewSection {
+    background: var(--bg-color-1) url("/images/kevin-gardner-review.svg") no-repeat right center;
+    background-size: 50% auto;
+    min-height: 511px;
+}
+
+.ReviewContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.ReviewContent {
+    width: 50%;
+    padding: 5rem 0 4rem 0;
+
+}
+
+.ReviewHeader {
+    max-width: 500px;
+}
+
+.ReviewHeader p {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--color-sub3);
+    margin: 0;
+}
+
+.ReviewHeader span {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.ReviewText {
+    color: var(--review-text-color);
+}
+
+.ReviewAuthor {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.ReviewAuthor p {
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--review-name-color);
+    margin: 0;
+}
+
+.ReviewAuthor span {
+    font-weight: 400;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--review-name-color);
+}
+
 .TeamContent {
     display: flex;
     flex-direction: column;
@@ -571,6 +660,7 @@ html, body, a {
     justify-content: center;
     align-items: center;
     flex-direction:column;
+    padding-bottom: 5rem;
 }
 
 .MemberGroup {
@@ -692,6 +782,73 @@ html, body, a {
     flex-direction: column;
     width: 67%;
     margin: 3rem 0 3rem 0;
+}
+
+.QuestionContainer {
+    padding: 1rem 0 4rem 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.QuestionTitle {
+    margin: 0 0 1rem 0;
+    color: var(--color-primary);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.QuestionForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.FormGroup1 {
+    display: flex;
+    gap: 1rem;
+}
+
+.QuestionForm input,
+.QuestionForm textarea {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    background: #fff;
+    color: var(--body-text-color);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 400;
+    outline: none;
+}
+
+.QuestionForm textarea {
+    min-height: 175px;
+    resize: none;
+}
+
+.QuestionForm input::placeholder,
+.QuestionForm textarea::placeholder{
+  color: var(--color-Note-1);
+  font-style: italic;
+}
+
+.QuestionForm input:focus,
+.QuestionForm textarea:focus{
+  border-color: var(--color-sub3);
+  box-shadow: 0 0 0 3px rgba(217,195,169,.25);
+}
+
+.QuestionFormBtn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    border: 0;
+    border-radius: 3px;
+    max-width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .contact-container {

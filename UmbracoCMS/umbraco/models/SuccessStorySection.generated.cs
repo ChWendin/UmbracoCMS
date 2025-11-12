@@ -50,7 +50,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		// properties
 
 		///<summary>
-		/// Success Story Image
+		/// Image
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -58,7 +58,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops SuccessStoryImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "successStoryImage");
 
 		///<summary>
-		/// Success Story Label
+		/// Label
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -66,7 +66,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SuccessStoryLabel => this.Value<string>(_publishedValueFallback, "successStoryLabel");
 
 		///<summary>
-		/// Success Story Stat 1
+		/// Stat 1
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -74,7 +74,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SuccessStoryStat1 => this.Value<string>(_publishedValueFallback, "successStoryStat1");
 
 		///<summary>
-		/// Success Story Stat 2
+		/// Stat 2
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -82,7 +82,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SuccessStoryStat2 => this.Value<string>(_publishedValueFallback, "successStoryStat2");
 
 		///<summary>
-		/// Success Story Stat 3
+		/// Stat 3
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -90,7 +90,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SuccessStoryStat3 => this.Value<string>(_publishedValueFallback, "successStoryStat3");
 
 		///<summary>
-		/// Success Story Stat Text 1
+		/// Stat Text 1
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -98,7 +98,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SuccessStoryStatText1 => this.Value<string>(_publishedValueFallback, "successStoryStatText1");
 
 		///<summary>
-		/// Success Story Stat Text 2
+		/// Stat Text 2
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -106,7 +106,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SuccessStoryStatText2 => this.Value<string>(_publishedValueFallback, "successStoryStatText2");
 
 		///<summary>
-		/// Success Story Stat Text 3
+		/// Stat Text 3
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
@@ -114,7 +114,7 @@ namespace Umbraco.Cms.Web.Common.PublishedModels
 		public virtual string SuccessStoryStatText3 => this.Value<string>(_publishedValueFallback, "successStoryStatText3");
 
 		///<summary>
-		/// Success Story Title
+		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "16.3.1+6458bb4")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]

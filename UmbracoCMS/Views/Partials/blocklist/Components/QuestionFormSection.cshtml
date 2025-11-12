@@ -1,0 +1,24 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockListItem>;
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+    var content = (ContentModels.QuestionFormSection)Model.Content;
+}
+
+<section class="QuestionSection">
+    <div class="QuestionContainer">
+        <h3 class="QuestionTitle">@content.QuestionFormTitle</h3>
+
+        <form class="QuestionForm" action="#" method="post" novalidate>
+            <div class="FormGroup1">
+                <input id="q-name" name="name" type="text" placeholder="Name" />
+
+                <input id="q-email" name="email" type="email" placeholder="Email" />
+            </div>
+
+           
+            <textarea id="q-message" name="message" placeholder="Question" rows="7"></textarea>
+
+            <button type="submit" class="QuestionFormBtn">@content.QuestionFormButtonText</button>
+        </form>
+    </div>
+</section>
