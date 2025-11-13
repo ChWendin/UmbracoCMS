@@ -921,6 +921,100 @@ html, body, a {
     bottom: 0;
 }
 
+.ContactForm-Section {
+    position: relative;
+    background: url(/images/map-bg.svg);
+    min-height: 750px;
+}
+
+.ContactFormContainer {
+    background-color: var(--color-white);
+    min-width: 1170px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.10);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6rem;
+    padding: 4rem 4rem 5rem 4rem;
+}
+
+.ContactForm-Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.ContactFormContent p {
+    margin: 0;
+}
+
+.ContactFormContent h2 {
+    margin: 0;
+}
+
+.ContactFormText {
+    display: block;
+    margin: 1.5rem auto;
+    max-width: 554px;
+}
+
+.FormFlex {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.FormFlex input,
+.FormFlex select {
+    width: 100%;
+    height: 48px;
+    padding: 0 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--color-white);
+    font: 400 14px var(--font-standard);
+    color: var(--body-text-color);
+}
+
+.FormFlex select {
+    appearance: none; 
+    background-image: url('/images/arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+.FormFlex input::placeholder {
+    color: var(--color-Note-1);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.ContactFormFormBtn {
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--color-primary);
+    color: var(--color-secondary);
+    border: 0;
+    border-radius: 3px;
+    max-width: 140px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.LogoSectionContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    min-height: 270px;
+}
+
 .footerContainer {
     background-color: var(--footer-bg-color);
     padding: 1.3rem 0 1.3rem 0;
